@@ -1,6 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<ItemGroup>
+	  <Compile Remove="Data\SeeData\**" />
+	  <EmbeddedResource Remove="Data\SeeData\**" />
+	  <None Remove="Data\SeeData\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.5" />
 	</ItemGroup>
 	
